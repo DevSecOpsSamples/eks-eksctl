@@ -98,6 +98,7 @@ eksctl create iamidentitymapping --cluster ${CLUSTER_NAME} --arn arn:aws:iam::${
 ## Step 2: Install metrics-server
 
 ```bash
+kubectl create namespace monitoring
 helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/
 helm upgrade --install metrics-server metrics-server/metrics-server -n monitoring
 ```
