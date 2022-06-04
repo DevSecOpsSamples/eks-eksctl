@@ -13,10 +13,6 @@
 
 https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery
 
-```bash
-
-```
-
 ## Steps
 
 1. Create EKS cluster and nodegroup
@@ -36,8 +32,8 @@ PUBLIC_SUBNET2="subnet-456"
 PRIVATE_SUBNET1="subnet-1234"
 PRIVATE_SUBNET2="subnet-5678"
 
-sed -e "s|<vpc-id>|${VPC_ID}|g" eks-cluster-template.yaml | sed -e "s|<public-subnet1>|${PUBLIC_SUBNET1}|g" | sed -e "s|<PUBLIC_SUBNET1>|${REGION}|g" | sed -e "s|<private-subnet1>|${PRIVATE_SUBNET1}|g" | sed -e "s|<private-subnet2>|${PRIVATE_SUBNET2}|g" > eks-cluster.yaml
-sed -e "s|<vpc-id>|${VPC_ID}|g" eks-cluster-ng-template.yaml | sed -e "s|<public-subnet1>|${PUBLIC_SUBNET1}|g" | sed -e "s|<PUBLIC_SUBNET1>|${REGION}|g" | sed -e "s|<private-subnet1>|${PRIVATE_SUBNET1}|g" | sed -e "s|<private-subnet2>|${PRIVATE_SUBNET2}|g" > eks-cluster-ng.yaml
+sed -e "s|<vpc-id>|${VPC_ID}|g" eks-cluster-template.yaml | sed -e "s|<public-subnet1>|${PUBLIC_SUBNET1}|g" | sed -e "s|<public-subnet2>|${PUBLIC_SUBNET2}|g" | sed -e "s|<private-subnet1>|${PRIVATE_SUBNET1}|g" | sed -e "s|<private-subnet2>|${PRIVATE_SUBNET2}|g" > eks-cluster.yaml
+sed -e "s|<vpc-id>|${VPC_ID}|g" eks-cluster-ng-template.yaml | sed -e "s|<public-subnet1>|${PUBLIC_SUBNET1}|g" | sed -e "s|<public-subnet2>|${PUBLIC_SUBNET2}|g" | sed -e "s|<private-subnet1>|${PRIVATE_SUBNET1}|g" | sed -e "s|<private-subnet2>|${PRIVATE_SUBNET2}|g" > eks-cluster-ng.yaml
 ```
 
 ```bash
@@ -51,7 +47,7 @@ eksctl create nodegroup -f eks-cluster-ng.yaml
 * [eks-cluster.yaml](./eks-cluster.yaml)
 * [eks-cluster-ng.yaml](./eks-cluster-ng.yaml)
 
-It takes around 23 minutes: Cluster 13m, Manged Node Group 10m. GPU instance is not supported in some AZ such `ap-northeast-2b` Zone of Seoul region.
+It takes around 24 minutes: Cluster 14m, Manged Node Group 10m. GPU instance is not supported in some AZ such `ap-northeast-2b` Zone of Seoul region.
 
 ```bash
 2022-04-29 13:34:53 [ℹ]  eksctl version 0.90.0
