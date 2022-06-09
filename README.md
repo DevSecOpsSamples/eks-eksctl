@@ -1,6 +1,6 @@
 # EKS cluster setup using eksctl
 
-## Prequisets
+## Prerequisite
 
 * Install eksctl - https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
 
