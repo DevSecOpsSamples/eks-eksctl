@@ -1,6 +1,6 @@
 # EKS cluster setup using eksctl
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=engel80_eks-eksctl&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=engel80_eks-eksctl)  \[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=engel80_eks-eksctl&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=engel80_eks-eksctl)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=engel80_eks-eksctl&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=engel80_eks-eksctl) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=engel80_eks-eksctl&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=engel80_eks-eksctl)
 
 ## Architecture
 
