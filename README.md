@@ -1,12 +1,16 @@
 # EKS cluster setup using eksctl
 
-## Prerequisite
+## Architecture
+
+![Architecture](./screenshots/architecture.png?raw=true)
+
+## Prerequisites
 
 * Install eksctl - https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
 
 * Tags in VPC subnets for subnet discovery by load balancers
 
-| Subnet    | Key                             |  Value   |
+| Subnet    | Key                             |  Value      |
 |-----------|---------------------------------|-------------|
 | Public    | kubernetes.io/role/elb          |   1         |
 | Private   | kubernetes.io/role/internal-elb |   1         |
