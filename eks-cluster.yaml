@@ -1,0 +1,19 @@
+# 
+# eksctl create cluster -f eks-cluster.yaml --without-nodegroup
+# 
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: eks-autoscaling-dev
+  region: us-east-1
+
+vpc:
+  id: vpc-0d4d7faa6cbf8dc8f
+  subnets:
+    public:
+      us-east-1a: { id: subnet-0d7e7b2809ea17847 }
+      us-east-1b: { id: subnet-0c1d46351989050a3 }
+    private:
+      us-east-1a: { id: subnet-003474b3dd3e941ee }
+      us-east-1b: { id: subnet-025bc24f0d35923dd }
