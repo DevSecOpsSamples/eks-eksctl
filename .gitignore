@@ -3,7 +3,7 @@ eks-cluster-ng.yaml
 eks-cluster.yaml
 
 # common
-#.gradle
+.gradle
 .vscode
 **/logs
 
