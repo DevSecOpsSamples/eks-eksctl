@@ -1,12 +1,18 @@
 # EKS cluster setup using eksctl
 
-## Prerequisite
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=engel80_eks-eksctl&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=engel80_eks-eksctl)  \[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=engel80_eks-eksctl&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=engel80_eks-eksctl)
+
+## Architecture
+
+![Architecture](./screenshots/architecture.png?raw=true)
+
+## Prerequisites
 
 * Install eksctl - https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
 
 * Tags in VPC subnets for subnet discovery by load balancers
 
-| Subnet    | Key                             |  Value   |
+| Subnet    | Key                             |  Value      |
 |-----------|---------------------------------|-------------|
 | Public    | kubernetes.io/role/elb          |   1         |
 | Private   | kubernetes.io/role/internal-elb |   1         |
