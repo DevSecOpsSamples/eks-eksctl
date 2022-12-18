@@ -1,6 +1,7 @@
 # EKS cluster setup using eksctl
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=engel80_eks-eksctl&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=engel80_eks-eksctl) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=engel80_eks-eksctl&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=engel80_eks-eksctl)
+[![Build](https://github.com/DevSecOpsSamples/eks-eksctl/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/DevSecOpsSamples/eks-eksctl/actions/workflows/build.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=DevSecOpsSamples_eks-eksctl&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=DevSecOpsSamples_eks-eksctl) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=DevSecOpsSamples_eks-eksctl&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=DevSecOpsSamples_eks-eksctl)
 
 ## Architecture
 
@@ -194,4 +195,4 @@ kubectl delete -f v2_4_0_full.yaml
 
 ## Link
 
-* [https://github.com/engel80/aws-container](https://github.com/engel80/aws-container)
+* [https://github.com/DevSecOpsSamples/aws-container](https://github.com/DevSecOpsSamples/aws-container)
